@@ -80,3 +80,33 @@ git log
 --> 지금까지 올린 git commit log 확인 가능
 --> q 누르면 종료
 
+GitHub 회원가입 
+- github.com
+
+원격 저장소와 로컬 저장소 연결 
+- git remote add [원격저장소명(origin을 많이씀)] "깃허브 레퍼지토리(저장소) 주소"
+ex) git remote add origin https://github.com/jihoon120/test-1.git
+
+add 잘되었는지 확인하려면 git remote (목록) || git remote -v (목록 + url)
+
+- git remote remove 원격저장소명
+ex) git remote remove origin
+
+
+
+----------------------------------------------------------------------------
+
+로컬 저장소 저장 내역 -> 원격 저장소에 밀어 넣는다 (push)
+git push origin 브랜치명 
+
+
+403 오류나면 pobidden 오류 (인증안해서 생기는 오류)
+
+원격 저장소를 터미널에 인증
+
+git config --global user.name 깃허브 닉네임
+git config --global user.email 깃허브 로그인 이메일
+git config --list -> 엔터를 꾹 누르면 user.name이 등록 됐는지 확인 가능. q누르면 종료.
+
+
+---------------------------------------------------------------------
